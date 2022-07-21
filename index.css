@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', monospace;
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+    color: #fff;
+} 
+
+.ouroboros-2 {
+    width: 100%;
+    height: 100%;
+    position: absolute; z-index: 1;
+
+    background-image: url(assets/ouroboros-small.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%; 
+}
+
+
+@media only screen and (min-width: 1080px) {
+    .ouroboros-2 {
+        background-size: 70%; 
+    }
+}
+
+@media only screen and (max-height: 600px) {
+    .ouroboros-2 {
+        background-size: auto; 
+    }
+}
+
+@media only screen and (max-height: 450px) {
+    .ouroboros-2 {
+        background-size: 60%; 
+    }
+}
+
+@media only screen and (min-height: 1080px) {
+    .ouroboros-2 {
+        background-size: 80%; 
+    }
+}
+
+.navigate-container {
+    position: relative; z-index: 3;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 3rem;
+    justify-content: space-around;
+    background-color: transparent;
+    
+}
+
+.navigate-item {
+    color: #CFB53B;
+    font-size: 1.5rem;
+    width: calc(50% - 1rem);
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+@media only screen and (max-width: 700px) {
+    .navigate-container { 
+        padding: 1rem;
+        padding-top: 3rem;
+    }
+
+    .navigate-item {
+        font-size: 1.1rem;
+    }
+  }
+
+  a {
+    text-decoration: none;
+     text-shadow: #FC0 1px 0 10px;
+  }
+
+  /* 
+TODO: add fontawesome
+TOOD: add reading direction in the story.
+TODO: move pages to another user or repo
+  */

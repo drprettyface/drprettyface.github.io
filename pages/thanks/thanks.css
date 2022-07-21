@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', monospace;
+}
+
+body {
+    background-image: url(assets/background.gif);
+    background-size: cover;
+    background-color: black;
+    color: black;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.text-container {
+    margin-top: 4rem;
+    max-width: 700px;
+}
+
+.text-quote {
+    font-size: 3rem;
+}
+
+.text-signature {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    text-align: end;
+}
+
+.text-me {
+    margin-top: 6rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.text-thanks {
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.navigation-bottom {    
+    margin-top: auto; 
+    padding-bottom: 2rem;
+    /* margin-top: 4rem; */
+    /* flex-grow: 3; */
+}
+
+.new-line {
+    padding-top: 1rem;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .text-container { 
+        margin-top: 3rem;
+        margin-left: 1.2rem;
+        margin-right: 1.2rem;
+    }
+    .text-quote {
+        font-size: 1.5rem;
+    }
+
+    .text-signature {
+        font-size: 1rem;
+    }
+
+    .text-me {
+        margin-top: 2rem;
+    }
+
+    .text-thanks {
+        font-size: 2rem;
+    }
+  }
+
+  @media only screen and (max-width: 1080px) {
+    .text-quote {
+        font-size: 2rem;
+    }
+    
+    .text-signature {
+        margin-top: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .text-me {
+        margin-top: 4rem;
+    }
+
+    .text-thanks {
+        margin-top: 3rem;
+        font-size: 2rem;
+    }
+  }
+
+  @media only screen and (max-height: 500px) {
+    .text-container { 
+        margin-top: 3rem;
+    }
+
+    .text-quote {
+        font-size: 2rem;
+    }
+    
+    .text-signature {
+        margin-top: 0.5rem;
+        font-size: 1rem;
+    }
+    .text-me {
+        margin-top: 2em;
+    }
+
+    .text-thanks {
+        margin-top: 2rem;
+    }
+  }
